@@ -1,0 +1,18 @@
+:root {
+  --text: gray;
+}
+
+[data-theme="dark"] {
+  --text: #fff;
+}
+
+p {
+  color: var(--text);
+  transition: all 0.5s;
+}
+
+.left {
+  flex: 0.1;
+  background-color: transparent;
+  color: green;
+}

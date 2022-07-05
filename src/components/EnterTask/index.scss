@@ -1,0 +1,52 @@
+:root {
+  --background: #fff;
+  --text-button: #000;
+  --text-placeholder: #d3d3d3;
+  --text: #5f5e61;
+}
+
+[data-theme="dark"] {
+  --background: #000;
+  --text-button: #fff;
+  --text-placeholder: #3e3e3e;
+  --text: #fff;
+}
+
+.userinput {
+  width: 100%;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  outline-width: 0;
+  text-align: center;
+  display: inline-block;
+  border-bottom: 1px solid #ccc;
+  float: left;
+  width: 88%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 30px;
+  color: var(--text);
+  padding: 0 0 0 0;
+
+  &::placeholder {
+    transition: all 0.5s;
+    color: var(--text-placeholder);
+  }
+}
+
+.addbutton {
+  display: inline-block;
+  outline-width: 0;
+  float: left;
+  height: 39px;
+  width: 11%;
+  color: var(--text-button);
+  font-size: 20px;
+  text-align: center;
+  line-height: 39px;
+  cursor: pointer;
+  transition: all 0.5s;
+}

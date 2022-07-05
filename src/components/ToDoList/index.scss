@@ -1,0 +1,52 @@
+.todo {
+  color: green;
+}
+
+li {
+  display: flex;
+  overflow: auto;
+  animation: slidein 0.2s;
+  animation-fill-mode: forwards;
+  position: relative;
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  color: grey;
+  border-color: grey;
+  list-style-type: none;
+  border-bottom: 1px solid;
+  line-height: 1.5em;
+  max-height: 3em;
+  p {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+  }
+
+  &:hover {
+    color: tomato;
+    border-color: tomato;
+    cursor: pointer;
+  }
+
+  span,
+  button {
+    animation: opacity 0.5s;
+    animation-fill-mode: forwards;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    outline-width: 0;
+  }
+}
+
+button {
+  cursor: pointer;
+}

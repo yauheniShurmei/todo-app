@@ -1,0 +1,43 @@
+.done {
+  color: green;
+}
+
+li {
+  overflow: auto;
+  animation: slidein 0.2s;
+  animation-fill-mode: forwards;
+  position: relative;
+  width: 100%;
+  margin-top: 3px;
+  text-align: center;
+  color: grey;
+  border-color: grey;
+  list-style-type: none;
+  border-bottom: 1px solid;
+
+  &:hover {
+    color: tomato;
+    border-color: tomato;
+    cursor: pointer;
+  }
+
+  span,
+  button {
+    animation: opacity 0.5s;
+    animation-fill-mode: forwards;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  span {
+    margin: auto;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    outline-width: 0;
+  }
+}
