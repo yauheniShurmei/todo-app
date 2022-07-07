@@ -12,7 +12,8 @@ export class ThemeProvider extends Component {
   }
 
   changeTheme = () => {
-    this.setState({ isDarkTheme: !this.state.isDarkTheme });
+    const { isDarkTheme } = this.state;
+    this.setState({ isDarkTheme: !isDarkTheme });
   };
 
   render() {

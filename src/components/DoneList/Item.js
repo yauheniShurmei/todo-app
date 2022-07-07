@@ -1,5 +1,5 @@
 import "./Item.scss";
-import ThemeContext from "../../Context/ThemeContext";
+import ThemeContext from "../../context/ThemeContext";
 import { useContext } from "react";
 
 const Item = ({ item, deleteDone, index }) => {

@@ -4,7 +4,7 @@ import Clock from "./components/Clock";
 import DoneList from "./components/DoneList";
 import EnterTask from "./components/EnterTask";
 import ToDoList from "./components/ToDoList";
-import ThemeContext from "./Context/ThemeContext";
+import ThemeContext from "./context/ThemeContext";
 
 export default class App extends Component {
   constructor(props) {
@@ -21,10 +21,10 @@ export default class App extends Component {
     if (input === "") {
       alert("empty input");
     } else {
-      const newitems = this.state.items;
-      newitems.push(input);
+      const newItems = [...this.state.items];
+      newItems.push(input);
       this.setState({
-        items: newitems,
+        items: newItems,
         userinput: "",
       });
     }
@@ -45,7 +45,7 @@ export default class App extends Component {
   };
 
   addToDone = (e) => {
-    const donelist = this.state.done;
+    const donelist = [...this.state.done];
     donelist.push(e);
     this.setState({
       done: donelist,

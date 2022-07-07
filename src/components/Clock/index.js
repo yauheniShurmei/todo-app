@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import ThemeContext from "../../Context/ThemeContext";
+import ThemeContext from "../../context/ThemeContext";
 import "./index.scss";
 
 const Clock = () => {

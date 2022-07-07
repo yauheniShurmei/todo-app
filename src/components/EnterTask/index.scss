@@ -22,7 +22,7 @@ input {
   outline-width: 0;
   text-align: center;
   display: inline-block;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--text-placeholder);
   float: left;
   width: 88%;
   height: 35px;
@@ -30,6 +30,7 @@ input {
   font-size: 30px;
   color: var(--text);
   padding: 0 0 0 0;
+  transition: all 0.5s;
 
   &::placeholder {
     transition: all 0.5s;
